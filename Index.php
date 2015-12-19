@@ -128,6 +128,5 @@
 <?php
 $a = @$_POST['parti'];
 echo "Du röstade på"." ".$a;
-
-
+lelelele
 ?>
