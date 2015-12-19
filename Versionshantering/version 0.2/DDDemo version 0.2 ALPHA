@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DD Demo</title>    
+    <link rel="stylesheet" type="text/css" href="myCss.css">
+    <script src="Javascript.js"></script>
+  </head>  
+  <body onload="init()">
+  
+  <a href="index.php"><img src="logo.png" id="logo"></a>
+  <div id="wrapper">
+    <ul id="tabs">
+      <li><a href="#about">About JavaScript tabs</a></li>
+      <li><a href="#advantages">Advantages of tabs</a></li>
+      <li><a href="#usage">Using tabs</a></li>
+    </ul>
+
+    <div class="tabContent" id="about">
+      <h2>About JavaScript tabs</h2>
+      <div>
+        <p>JavaScript tabs partition your Web page content into tabbed sections. Only one section at a time is visible.</p>
+        <p>The code is written in such a way that the page degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+      </div>
+    </div>
+
+    <div class="tabContent" id="advantages">
+      <h2>Advantages of tabs</h2>
+      <div>
+        <p>JavaScript tabs are great if your Web page contains a large amount of content.</p>
+        <p>They're also good for things like multi-step Web forms.</p>
+      </div>
+    </div>
+
+    <div class="tabContent" id="usage">
+      <h2>Using tabs</h2>
+      <div>
+        <p>Click a tab to view the tab's content. Using tabs couldn't be easier!</p>
+      </div>
+    </div>
+</div>
+
+  
+  <form method="post" action="index.php">
+    <table style="width:15%">
+      <tr>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p1"/>
+            <img src="parti1.png">
+          </label>
+        </td>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p2"/>
+            <img src="parti2.png">
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p3"/>
+            <img src="parti3.png">
+          </label>
+        </td>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p4"/>
+            <img src="parti4.png">
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p5"/>
+            <img src="parti5.png">
+          </label>
+        </td>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p6"/>
+            <img src="parti6.png">
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p7"/>
+            <img src="parti7.png">
+          </label>
+        </td>
+        <td>  
+          <label>
+            <input type="radio" name="parti" value="p8"/>
+            <img src="parti8.png">
+          </label>
+        </td>
+      </tr>
+    </table>
+  
+  
+  
+  
+    <input type="text" value=""/>
+    <input type="submit" value="skicka!"/>  
+  </form>
+  
+  </body>  
+</html>
+
+<?php
+$a = @$_POST['parti'];
+echo "Du röstade på"." ".$a;
+
+
+?>
